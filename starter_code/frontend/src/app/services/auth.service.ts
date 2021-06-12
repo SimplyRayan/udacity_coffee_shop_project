@@ -27,6 +27,7 @@ export class AuthService {
     link += 'audience=' + this.audience + '&';
     link += 'response_type=token&';
     link += 'client_id=' + this.clientId + '&';
+    link += 'expires_in=' + '604800' + '&';
     link += 'redirect_uri=' + this.callbackURL + callbackPath;
     return link;
   }
